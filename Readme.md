@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анастасия Мажарова](https://up.htmlacademy.ru/htmlcss/22/user/780841).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
