@@ -11,9 +11,9 @@
       </a>
       <p class="main-search">Поиск</p>
       <!--Форма ввода-->
-      <p class="main-bookmarks"><a href="#">Закладки</a></p>
-      <p class="main-cart"><a href="#">Корзина</a></p>
-      <p class="main-checkout"><a href="#">Оформить заказ</a></p>
+      <a href="#" class="main-bookmarks">Закладки</a>
+      <a href="#" "main-cart">Корзина</a>
+      <a href="#" class="main-checkout">Оформить заказ</a>
       <section class="main-info">
         <h1>Интернет-магазин<br>
          строительных материалов<br>
@@ -23,11 +23,11 @@
         <p class="main-phone">+7(812)555-05-55</p>
         <p class="main-address">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
       </section>
+      <section class="main-user">
+        <a href="#" class="login-link">Войти</a>
+        <a href="#" class="check-in">Регистрация</a>
+      </section>
       <nav class="main-navigation">
-        <ul class="navigation-user">
-          <li class="login-link"><a href="#">Войти</a></li>
-          <li class="check-in"><a href="#">Регистрация</a></li>
-        </ul>
         <ul class="navigation-site">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <!--Может вместо h3 лучше span?-->
+
     <main class="container">
       <section class="shop-features">
         <div class="shop-materials">
@@ -70,55 +70,71 @@
       </section>
 
       <section class="popular-goods">
-        <h2>Популярные товары</h2>
-        <a href="technomart-catalog.html" class="all-popular-goods-btn">Все популярные товары</a>
+        <div class="caption-h2">
+          <h2>Популярные товары</h2>
+        </div>
+        <div class="btn-red">
+          <a href="technomart-catalog.html">Все популярные товары</a>
+        </div>
         <div class="popular-goods-item">
-          <div class="9000">
-            <div class="9000-img">
+          <div class="action">
+            <div class="img">
              <img src="" width="" height="" alt="Перфоратор BOSCH BFG 9000">
+           </div>
+           <div class="buy-bookmarks">
              <a href="technomart-catalog.html" class="btn-popular-item-buy">Покупка</a>
              <a href="technomart-catalog.html" class="btn-popular-item-bookmarks">В закладки</a>
            </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <del class="old-price">32500 Р.</del>
-            <ins class="price">25500 Р.</ins>
+            <span class="price">25500 Р.</span>
          </div>
-         <div class="3000">
-           <div class="3000-img">
+         <div class="action">
+           <div class="img">
             <img src="" width="" height="" alt="Перфоратор BOSCH BFG 3000">
+          </div>
+          <div class="buy-bookmarks">
             <a href="technomart-catalog.html" class="btn-popular-item-buy">Покупка</a>
             <a href="technomart-catalog.html" class="btn-popular-item-bookmarks">В закладки</a>
           </div>
            <h3>Перфоратор BOSCH BFG 3000</h3>
            <del class="old-price">22500 Р.</del>
-           <ins class="price">15500 Р.</ins>
+           <span class="price">15500 Р.</span>
         </div>
-        <div class="6000">
-          <div class="6000-img">
+        <div class="action">
+          <div class="img">
            <img src="" width="" height="" alt="Перфоратор BOSCH BFG 6000">
+         </div>
+         <div class="buy-bookmarks">
            <a href="technomart-catalog.html" class="btn-popular-item-buy">Покупка</a>
            <a href="technomart-catalog.html" class="btn-popular-item-bookmarks">В закладки</a>
           </div>
            <h3>Перфоратор BOSCH BFG 6000</h3>
            <del class="old-price">30500 Р.</del>
-           <ins class="price">25500 Р.</ins>
+           <span class="price">25500 Р.</span>
         </div>
-        <div class="2000">
-          <div class="2000-img">
+        <div class="action">
+          <div class="img">
            <img src="" width="" height="" alt="Перфоратор BOSCH BFG 2000">
+         </div>
+         <div class="buy-bookmarks">
            <a href="technomart-catalog.html" class="btn-popular-item-buy">Покупка</a>
            <a href="technomart-catalog.html" class="btn-popular-item-bookmarks">В закладки</a>
          </div>
            <h3>Перфоратор BOSCH BFG 2000</h3>
            <!--del class="old-price"></del-->
-           <ins class="price">12500 Р.</ins>
+           <span class="price">12500 Р.</span>
          </div>
        </div>
     </section>
 
     <section class="popular-producers">
-      <h2>Популярные производители</h2>
-      <a href="#" class="all-producers-btn">Все производители</a>
+      <div class="caption-h2">
+        <h2>Популярные производители</h2>
+      </div>
+      <div class="btn-red">
+        <a href="#">Все производители</a>
+      </div>
       <ul class="popular-producers-list">
         <li class="popular-producers-item">
           <a href="#"><img src="" width="" height="" alt="BOSCH"></a>
@@ -148,12 +164,12 @@
     </section>
 
     <section class="services">
-      <div class="services-good-shop">
-        <span>Сервисы</span>
+        <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого
             не только ценами! Мы стараемся изо всех сил, чтобы
             сделать ваши покупки приятными.</p>
-      </div>
+            <!--В этом месте я в ужасе, у меня не получается наперед продумывать стили
+            видимо поэтому и блоки интуитивные-->
         <ul class="services-features-list">
           <li class="services-features-item">
             Доставка
@@ -178,7 +194,7 @@
 
           <section class="info">
             <div class="info-company">
-            <h3>Компания "Техномарт"</h3>
+            <h2>Компания "Техномарт"</h2>
             <p>
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
               для ремонта и строительства не оставит равнодушными любителей
@@ -204,7 +220,7 @@
             </a>
           </div>
           <div class="info-contacts">
-            <h3>Контакты</h3>
+            <h2>Контакты</h2>
             <p>
               Вы можете забрать товар сами,<br>
               заехав в наш офис.
