@@ -3,13 +3,15 @@
    <head>
       <meta charset="utf-8">
       <title>Техномарт</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
       <header class="main-header">
          <a class="logo" href="#">Техномарт</a>
          <form action="https://echo.htmlacademy.ru" method="get">
             <input type="search" name="search" placeholder="Поиск:">
-            <span class="icon-search"></span>
+            <input type="submit">
          </form>
          <a href="#" class="main-bookmarks">Закладки</a>
          <a href="#" class="main-cart">Корзина</a>
@@ -26,7 +28,7 @@
          </section>
          <section class="main-user">
             <div class="main-user-exit">
-               <a class="user" href="#">Равшан Джамшутович</a>
+               <a class="user-personal-area" href="#">Равшан Джамшутович</a>
                <input type="button" value="button-user-exit">
                <br>
             </div>
@@ -72,18 +74,16 @@
                </fieldset>
                <fieldset class="sidebar-producers">
                   <legend>Производители:</legend>
-                  <div class="sidebar-btn-producers">
-                     <input type="checkbox" id="bosch" checked>
-                     <label for="bosch">Bosch</label><br>
-                     <input type="checkbox" id="inter">
-                     <label for="inter">Интерскол</label><br>
-                     <input type="checkbox" id="makita" checked>
-                     <label for="makita">Makita</label><br>
-                     <input type="checkbox" id="dewalt">
-                     <label for="dewalt">Dewalt</label><br>
-                     <input type="checkbox" id="hitachi">
-                     <label for="hitachi">Hitachi</label>
-                  </div>
+                  <input type="checkbox" id="bosch" checked>
+                  <label for="bosch">Bosch</label><br>
+                  <input type="checkbox" id="inter">
+                  <label for="inter">Интерскол</label><br>
+                  <input type="checkbox" id="makita" checked>
+                  <label for="makita">Makita</label><br>
+                  <input type="checkbox" id="dewalt">
+                  <label for="dewalt">Dewalt</label><br>
+                  <input type="checkbox" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
                </fieldset>
                <fieldset class="sidebar-supply-power">
                   <legend>Питание:</legend>
@@ -234,9 +234,7 @@
          </article>
       </main>
       <footer class="main-footer">
-         <a class="main-footer-logo">
-         <img src="" width="" height="" alt="логотип Техномарт">
-         </a>
+         <a class="logo" href="#">Техномарт</a>
          <p class="footer-address">
             г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br> +7(812)555-05-55
          </p>

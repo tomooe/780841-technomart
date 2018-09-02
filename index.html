@@ -3,14 +3,16 @@
    <head>
       <meta charset="utf-8">
       <title>Техномарт</title>
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
       <header class="main-header">
          <section class="main-header-top">
-            <a class="logo" href="#">Техномарт</a>
+            <a class="logo" href="#">Техномарт</a>           
             <form action="https://echo.htmlacademy.ru" method="get">
                <input type="search" name="search" placeholder="Поиск:">
-               <span class="icon-search"></span>
+               <input type="submit">
             </form>
             <a href="#" class="main-bookmarks">Закладки</a>
             <a href="#" class="main-cart">Корзина</a>
@@ -24,7 +26,7 @@
          </section>
          <section class="main-contacts">
             <p class="main-phone">+7(812)555-05-55</p>
-            <p class="main-address">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
+            <p class="main-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
          </section>
          <section class="main-user">
             <a href="#" class="login-link">Войти</a>
@@ -58,8 +60,8 @@
             </div>
             <div class="shop-catalog">
                <h3>Дрели</h3>
-               <p>Соседям на радость</p>
-               <a href="#" class="shop-features-btn">Открыть каталог</a>
+               <p>Соседям на радость!</p>
+               <a href="#" class="index-btn">Открыть каталог</a>
                <img src="img/layer-drill.jpg" width="622" height="267" alt="Дрели! Соседям на радость">
                <!--<input type="radio"  name="sliders">
                   <input type="radio"  name="sliders"--> 
@@ -76,7 +78,7 @@
          <section class="popular-goods">
             <div class="popular-goods-top">
                <h2>Популярные товары</h2>
-               <a href="technomart-catalog.html">Все популярные товары</a>
+               <a href="technomart-catalog.html" class="index-btn">Все популярные товары</a>
             </div>
             <div class="popular-goods-item">
                <div class="goods-item">
@@ -132,7 +134,7 @@
          <section class="popular-producers">
             <div class="popular-producers-top">
                <h2>Популярные производители</h2>
-               <a href="#">Все производители</a>
+               <a href="#" class="index-btn">Все производители</a>
             </div>
             <ul class="popular-producers-list">
                <li class="popular-producers-item">
@@ -166,7 +168,7 @@
             <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
             <ul class="services-features-list">
-               <li class="services-features-item">
+               <li class="services-features-item services-features-item-delivery ">
                   Доставка
                </li>
                <li class="services-features-item">
@@ -203,7 +205,7 @@
                      ЖелДорЭкспедиция
                   </li>
                </ul>
-               <a href="company.html" class="details-company-btn">
+               <a href="company.html" class="index-btn">
                Подробнее о компании
                </a>
             </div>
@@ -214,7 +216,7 @@
                </p>
                <a href="#"><img src="img/maps.png" width="300" height="158" alt="Санкт-Петербург,
                   ул.Большая Конюшенная д.19"></a>
-               <a href="#" class="info-feedback-btn">
+               <a href="#" class="index-btn">
                Заблудились? Напишите нам!
                </a>
             </div>
